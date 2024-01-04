@@ -1,5 +1,5 @@
 /**
- * @generated SignedSource<<3e171f426e4fc3797e847aec5bcbec53>>
+ * @generated SignedSource<<f1aa3627acdb7868e4bbe10ed030a352>>
  * @lightSyntaxTransform
  * @nogrep
  */
@@ -127,6 +127,7 @@ return {
                 "name": "name",
                 "storageKey": null
               },
+              (v0/*: any*/),
               {
                 "alias": null,
                 "args": null,
@@ -156,8 +157,7 @@ return {
                   (v1/*: any*/)
                 ],
                 "storageKey": null
-              },
-              (v0/*: any*/)
+              }
             ],
             "storageKey": null
           },
@@ -192,12 +192,12 @@ return {
     ]
   },
   "params": {
-    "cacheID": "640ce42be3b729907325ea74b0d1508a",
+    "cacheID": "521deb9ba510bd1e7c1536da920870cc",
     "id": null,
     "metadata": {},
     "name": "NewsfeedQuery",
     "operationKind": "query",
-    "text": "query NewsfeedQuery {\n  topStories {\n    id\n    ...StoryFragment\n  }\n}\n\nfragment ImageFragment_3kdL71 on Image {\n  url(width: 800)\n  altText\n}\n\nfragment ImageFragment_G9Ae3 on Image {\n  url(width: 80, height: 60)\n  altText\n}\n\nfragment PosterBylineFragment on Actor {\n  __isActor: __typename\n  name\n  profilePicture {\n    ...ImageFragment_G9Ae3\n  }\n}\n\nfragment StoryFragment on Story {\n  title\n  summary\n  createdAt\n  poster {\n    __typename\n    ...PosterBylineFragment\n    id\n  }\n  thumbnail {\n    ...ImageFragment_3kdL71\n  }\n}\n"
+    "text": "query NewsfeedQuery {\n  topStories {\n    id\n    ...StoryFragment\n  }\n}\n\nfragment ImageFragment_3kdL71 on Image {\n  url(width: 800)\n  altText\n}\n\nfragment ImageFragment_G9Ae3 on Image {\n  url(width: 80, height: 60)\n  altText\n}\n\nfragment PosterBylineFragment on Actor {\n  __isActor: __typename\n  name\n  id\n  profilePicture {\n    ...ImageFragment_G9Ae3\n  }\n}\n\nfragment StoryFragment on Story {\n  title\n  summary\n  createdAt\n  poster {\n    __typename\n    ...PosterBylineFragment\n    id\n  }\n  thumbnail {\n    ...ImageFragment_3kdL71\n  }\n}\n"
   }
 };
 })();
