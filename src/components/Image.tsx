@@ -38,7 +38,6 @@ export default function Image({
   className,
 }: Props): React.ReactElement {
   const data = useFragment(ImageFragment, image);
-  console.log('data:',data);
   if (image == null) {
     return null;
   }
